@@ -1,13 +1,3 @@
-/*
- * Copyright 2012-present, Polis Technology Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights for non-commercial use can be found in the PATENTS file
- * in the same directory.
- */
-
 import InputField from "material-ui/lib/text-field";
 import React from "react";
 import { connect } from "react-redux";
@@ -112,8 +102,7 @@ class News extends React.Component {
         backgroundColor={"#03a9f4"}
         headerBackgroundColor={"#03a9f4"}
         footerBackgroundColor={"#03a9f4"}
-        image={false}
-        stars={{visible: true, color: "darkgrey"}}>
+        image={false}>
         {/* hero */}
         <Flex
           direction="column"

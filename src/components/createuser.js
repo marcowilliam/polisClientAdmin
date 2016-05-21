@@ -1,13 +1,3 @@
-/*
- * Copyright 2012-present, Polis Technology Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights for non-commercial use can be found in the PATENTS file
- * in the same directory.
- */
-
 import React from "react";
 import { connect } from "react-redux";
 import { doCreateUser, doFacebookSignin } from "../actions";
@@ -29,15 +19,14 @@ const styles = {
   card: {
     position: "relative",
     zIndex: 10,
-    backgroundColor: "rgba(0,0,0,.3)",
-    padding: "50px",
+    padding: 20,
     borderRadius: 3,
-    color: "white"
+    color: "rgb(130,130,130)"
   },
   button: {
     display: "block",
-    backgroundColor: "white",
-    color: "rgb(100,100,100)"
+    backgroundColor: "#03a9f4",
+    color: "white"
   },
   input: {
     display: "block",
@@ -46,7 +35,7 @@ const styles = {
     fontSize: 14,
     padding: 7,
     borderRadius: 3,
-    border: "1px solid rgba(240,240,240,1)",
+    border: "1px solid rgb(130,130,130)",
   },
   facebookButton: {
     border: 0,
@@ -62,7 +51,8 @@ const styles = {
     marginBottom: 20
   },
   links: {
-    color: "white"
+    color: "rgb(130,130,130)",
+    textDecoration: "underline"
   },
   signinContainer: {
     marginTop: 20
@@ -72,7 +62,7 @@ const styles = {
     maxWidth: 400,
     fontWeight: 300,
     lineHeight: 1.3,
-    color: "rgb(220,220,220)"
+    color: "rgb(130,130,130)"
   }
 };
 
@@ -238,7 +228,11 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <StaticContentContainer  stars={{visible: true, color: "white"}}>
+      <StaticContentContainer
+        backgroundColor={"#03a9f4"}
+        headerBackgroundColor={"#03a9f4"}
+        footerBackgroundColor={"#03a9f4"}
+        image={false}>
         <Flex>
           <div style={styles.card}>
             <p style={styles.heading}>

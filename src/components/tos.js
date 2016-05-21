@@ -1,13 +1,3 @@
-/*
- * Copyright 2012-present, Polis Technology Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights for non-commercial use can be found in the PATENTS file
- * in the same directory.
- */
-
 import React from 'react';
 import Radium from 'radium';
 import _ from 'lodash';
@@ -18,10 +8,9 @@ const styles = {
     card: {
     position: "relative",
     zIndex: 10,
-    backgroundColor: "rgba(0,0,0,.3)",
     padding: "50px",
     borderRadius: 3,
-    color: "white",
+    color: "rgb(130,130,130)",
     maxWidth: 700,
     margin: 50
   },
@@ -32,8 +21,12 @@ class TOS extends React.Component {
 
   render() {
     return (
-    <StaticContentContainer>
-  <div style={styles.card}>
+      <StaticContentContainer
+        backgroundColor={"#03a9f4"}
+        headerBackgroundColor={"#03a9f4"}
+        footerBackgroundColor={"#03a9f4"}
+        image={false}>
+    <div style={styles.card}>
     <p>"Last Updated: 6/26/2014"</p>
 
     <p>"Po.lis Terms of Use"</p>
@@ -486,5 +479,3 @@ class TOS extends React.Component {
 }
 
 export default TOS;
-
-
