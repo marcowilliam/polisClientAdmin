@@ -77,10 +77,13 @@ class Bot extends React.Component {
         marginTop: 20,
       },
       waitingListInput: {
-        padding: 13,
+        padding: 16,
         border: "none",
         borderRadius: 3,
-        margin: "20px 0px 10px 0px"
+        margin: "20px 0px 10px 0px",
+        '@media (min-width: 470px)': {
+          marginRight: 20,
+        },
       },
       waitingListButton: {
         backgroundColor: "#03a9f4",
@@ -171,7 +174,8 @@ class Bot extends React.Component {
         color: "rgb(130,130,130)",
         fontWeight: 700,
         fontSize: "1.2em",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        paddingTop: 20,
       },
       pricingDesc: {
         color: "rgb(130,130,130)",
@@ -189,14 +193,15 @@ class Bot extends React.Component {
       pricingSubtext: {
         color: "rgb(130,130,130)",
         fontSize: "1.4em",
-        margin: "10px 20px 40px 20px",
+        margin: "10px 20px 10px 20px",
         textAlign: "center",
         lineHeight: 1.8,
 
       },
-      lowerCallToActionContainer: {
+      callToActionContainer: {
         width: "100%",
-        backgroundColor: "rgb(230,230,230)",
+        backgroundColor: "rgb(245,245,245)",
+        paddingBottom: 20,
       }
     }
   }
@@ -228,7 +233,7 @@ class Bot extends React.Component {
           </Flex>
             <p style={this.styles().hero}>
               {`
-                Your team's thoughts.
+                Your team's thoughts. Automatically.
               `}
             </p>
 
@@ -244,20 +249,18 @@ class Bot extends React.Component {
         {/* upper cta */}
         <Flex
           direction="column"
-          styleOverrides={this.styles().lowerCallToActionContainer}>
-        <div>
+          styleOverrides={this.styles().callToActionContainer}>
+        <Flex alignItems="baseline" wrap="wrap">
           <input
             placeholder="email"
             style={this.styles().waitingListInput}
             type="email"/>
-        </div>
-        <div>
           <Button
             onClick={this.handleJoinWaitingListClicked()}
             style={this.styles().waitingListButton}>
             Join the Waiting List
           </Button>
-        </div>
+        </Flex>
         </Flex>
         <Flex
           direction="column"
@@ -301,7 +304,11 @@ class Bot extends React.Component {
           <Step
             step={"4"}
             body={`
-              PolisBot sends you a summary of statements that enjoyed broad consensus. If there were divisive issues, the summary will also convey opinion groups that formed, whether they were the majority or minority, and what issues separated them from the rest of the participants.
+              PolisBot sends you a summary of statements that enjoyed broad consensus.
+              If there were divisive issues,
+              the summary will also convey opinion groups that formed,
+              whether they were the majority or minority,
+              and what issues separated them from the rest of the participants
               `}/>
         </Flex>
 
@@ -317,20 +324,18 @@ class Bot extends React.Component {
         {/* lower cta */}
         <Flex
           direction="column"
-          styleOverrides={this.styles().lowerCallToActionContainer}>
-        <div>
+          styleOverrides={this.styles().callToActionContainer}>
+        <Flex wrap="wrap" alignItems="baseline">
           <input
             placeholder="email"
             style={this.styles().waitingListInput}
             type="email"/>
-        </div>
-        <div>
           <Button
             onClick={this.handleJoinWaitingListClicked()}
             style={this.styles().waitingListButton}>
             Join the Waiting List
           </Button>
-        </div>
+        </Flex>
         </Flex>
       </StaticContentContainer>
     );
