@@ -23,17 +23,9 @@ import Step from "./step";
 import BackgroundStars from "../framework/background-stars";
 import PolisLogo from "../framework/polis-logo";
 
-// import { Tweet } from 'react-twitter-widgets';
-
-/*
-
-  <p> polis leverages techniques from both quantitative and qualitative research, combined with powerful analytics, to gather feedback that is simultaneously authentic to the population being surveyed and data rich. </p>
-
-*/
-
 @connect()
 @Radium
-class Bot extends React.Component {
+class Demo extends React.Component {
   styles() {
     return {
       container: {
@@ -211,130 +203,11 @@ class Bot extends React.Component {
         footerBackgroundColor={"#03a9f4"}
         image={false}
         stars={{visible: true, color: "darkgrey"}}>
-        {/* hero */}
-        <Flex
-          styleOverrides={this.styles().heroContainer}
-          direction="column"
-          alignItems="center"
-          >
-          <Flex>
-          {/*
-            <PolisLogo color={"rgb(130,130,130)"} backgroundColor={"rgb(130,130,130)"}/>
-            <Awesome style={{color: "rgb(130,130,130)"}} name={"heart"}/>
-          */}
-          <img
-            style={this.styles().slackLogo}
-            src="https://upload.wikimedia.org/wikipedia/en/7/76/Slack_Icon.png"/>
-          </Flex>
-            <p style={this.styles().hero}>
-              {`
-                Your team's thoughts.
-              `}
-            </p>
-
-            <p style={this.styles().heroSub}>
-              Meet PolisBot, an AI powered slackbot. Ask the questions you
-              have, get sophisticated text summaries automatically. Eliminate
-               information gathering meetings, complex
-              email chains and time spent creating surveys. Works with
-              teams of any size - even thousands.
-            </p>
-
-        </Flex>
-        {/* upper cta */}
-        <Flex
-          direction="column"
-          styleOverrides={this.styles().lowerCallToActionContainer}>
-        <div>
-          <input
-            placeholder="email"
-            style={this.styles().waitingListInput}
-            type="email"/>
-        </div>
-        <div>
-          <Button
-            onClick={this.handleJoinWaitingListClicked()}
-            style={this.styles().waitingListButton}>
-            Join the Waiting List
-          </Button>
-        </div>
-        </Flex>
-        <Flex
-          direction="column"
-          styleOverrides={this.styles().imageContainer}>
-          <img
-            style={this.styles().imagesCombinedForHighRes}
-            src="http://s32.postimg.org/qdigc9kvp/convo_Interface_Combined.png"/>
-          <img
-            style={this.styles().interfaceImage}
-            src="http://s33.postimg.org/zfoqfil0v/slack_Interface.png"/>
-          <img
-            style={this.styles().conversationImage}
-            src="http://s33.postimg.org/jr40v6nov/conversation.png"/>
-        </Flex>
-        <Flex
-          styleOverrides={{
-            width: "100%",
-
-          }}
-          direction="column"
-          justifyContent="center"
-          wrap="nowrap"
-          alignItems="center">
-          <p style={this.styles().howItWorks}> Get started in minutes </p>
-          <Step
-            step={"1"}
-            body={`
-              Invite PolisBot to your Slack team (we'll send you a link)
-              `}/>
-          <Step
-            step={"2"}
-            body={`
-              Send PolisBot a question to ask your team and specify some combination of
-              #channels and @users to participate
-              `}/>
-          <Step
-            step={"3"}
-            body={`
-              Assign someone (or yourself) to moderate statements for workplace appropriateness
-              `}/>
-          <Step
-            step={"4"}
-            body={`
-              PolisBot sends you a summary of statements that enjoyed broad consensus. If there were divisive issues, the summary will also convey opinion groups that formed, whether they were the majority or minority, and what issues separated them from the rest of the participants.
-              `}/>
-        </Flex>
-
-        <Flex
-          styleOverrides={this.styles().pricingContainer}
-          direction="column"
-          justifyContent="center">
-          <p style={this.styles().pricingHeadline}> Transparent Pricing </p>
-          <p style={this.styles().pricingDesc}> 45 days to experiment. $3 / month / user thereafter. </p>
-          <p style={this.styles().pricingNumber}> $3 </p>
-          <p style={this.styles().pricingSubtext}> per month per slack user </p>
-        </Flex>
-        {/* lower cta */}
-        <Flex
-          direction="column"
-          styleOverrides={this.styles().lowerCallToActionContainer}>
-        <div>
-          <input
-            placeholder="email"
-            style={this.styles().waitingListInput}
-            type="email"/>
-        </div>
-        <div>
-          <Button
-            onClick={this.handleJoinWaitingListClicked()}
-            style={this.styles().waitingListButton}>
-            Join the Waiting List
-          </Button>
-        </div>
-        </Flex>
+        <div className='polis' data-conversation_id='2arcefpshi'></div>
+        <script async='true' src='https://pol.is/embed.js'></script>
       </StaticContentContainer>
     );
   }
 }
 
-export default Bot;
+export default Demo;
