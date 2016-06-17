@@ -66,7 +66,7 @@ class SidebarContentHome extends React.Component {
     return (
       <MaterialTitlePanel
         showHamburger={false}
-        title="Pol.is"
+        title="pol.is"
         style={this.props.style ? {...styles.sidebar, ...this.props.style} : styles.sidebar}>
         <div style={styles.content} onClick={this.handleClick.bind(this)}>
           <span
