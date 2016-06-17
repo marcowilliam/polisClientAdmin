@@ -108,14 +108,12 @@ class ComponentName extends React.Component {
           submitSuccess: true,
           submitError: false
         })
-      })
-      .catch(() => {
+      }, () => {
         this.setState({
           submitSuccess: false,
           submitError: true
         })
       });
-
   }
   render() {
     const styles = this.getStyles();
