@@ -66,7 +66,6 @@ class MetaLander extends React.Component {
         cursor: "pointer",
         flexDirection: "column",
         alignItems: "center",
-        flexWrap: "no-wrap",
         justifyContent: "center",
         // '@media (min-width: 320px)': {
         //   marginTop: 0,
@@ -91,14 +90,21 @@ class MetaLander extends React.Component {
         zIndex: -300
       },
       iconWrapper: {
-        marginLeft: 30,
-        width: 250
+        marginTop: 20,
+        "@media (min-width: 768px)": {
+          marginLeft: 30,
+          width: 250,
+        }
       },
       forText: {
         color: "#FFFFFF",
         width: 300,
         fontSize: "2em",
         fontWeight: 300,
+        textAlign: "center",
+        "@media (min-width: 768px)": {
+          textAlign: "left"
+        }
       },
       publisherIcon: {
 
