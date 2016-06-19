@@ -11,7 +11,7 @@
 import React from "react";
 import Awesome from "react-fontawesome";
 import * as globals from "./framework/global-styles";
-import HexLogoTinyLong from "./framework/hex-logo-tiny-long";
+import HexLogoTinyShort from "./framework/hex-logo-tiny-short";
 
 const styles = {
   root: {
@@ -21,12 +21,13 @@ const styles = {
   header: {
     backgroundColor: "#03a9f4",
     color: "white",
-    paddingTop: 4,
     fontSize: "1.5em",
+    paddingTop: 8,
+    display: "flex",
+    justifyContent: "center",
+    paddingBottom: 2,
   },
   linkout: {
-    textDecoration: "none",
-    color: "white"
   }
 };
 
@@ -35,9 +36,9 @@ const MaterialTitlePanelSidebar = (props) => {
   const rootStyle = props.style ? {...styles.root, ...props.style} : styles.root;
   return (
     <div style={rootStyle}>
-      <div style={styles.header}>
+      <div id="76876876" style={styles.header}>
         <a style={styles.linkout} target="blank" href={"https://"+props.title}>
-          <HexLogoTinyLong/>
+            <HexLogoTinyShort/>
         </a>
       </div>
       {props.children}
