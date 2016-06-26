@@ -35,6 +35,7 @@ import CreateUser from "./components/createuser";
 import Contributor from "./components/contributors";
 /* landers */
 import News from "./components/landers/news";
+import News2 from "./components/landers/news2";
 import Home from "./components/landers/homepage";
 import Plus from "./components/landers/plus";
 import Bot from "./components/landers/bot";
@@ -109,7 +110,7 @@ class Root extends React.Component {
                 <Route path="export" component={DataExport}/>
               </Route>
             </Route>
-            <Route path="news" component={News}/>
+            <Route path="news" component={News2}/>
             <Route path="plus" component={Plus}/>
             <Route path="home" component={Meta}/>
             <Route path="bot" component={Bot}/>
