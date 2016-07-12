@@ -27,7 +27,7 @@ const styles = {
   },
 }
 
-@connect(state => state.seed_comments)
+@connect(state => state.seed_comments_tweet)
 @Radium
 class ModerateCommentsSeed extends React.Component {
   constructor(props) {
@@ -38,7 +38,7 @@ class ModerateCommentsSeed extends React.Component {
     };
   }
   handleSubmitSeed () {
-    var val = this.refs.seed_form.value;
+    var val = this.refs.seed_form_tweet.value;
     var match = val && val.match(/[a-zA-Z0-9]+$/);
     var tweet_id = "";
     if (match && match.length) {
@@ -87,7 +87,7 @@ class ModerateCommentsSeed extends React.Component {
         }}> Paste in a Tweet URL. It will be imported for participants to vote on. </p>
         <div onKeyPress={this.handleKey.bind(this)}>
           <textarea
-            value={this.props.seedText}
+            value={this.props.seedTweetText}
             onChange={this.handleTextareaChange.bind(this)}
             rows="1"
             maxLength="200"
@@ -101,7 +101,7 @@ class ModerateCommentsSeed extends React.Component {
               fontSize: 16,
               padding: 10
             }}
-            ref="seed_form"/>
+            ref="seed_form_tweet"/>
         </div>
         <div>
           <Button
