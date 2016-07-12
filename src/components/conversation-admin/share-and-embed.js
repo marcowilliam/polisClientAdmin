@@ -8,12 +8,14 @@
  * in the same directory.
  */
 
+import _ from "lodash";
+import ConversationHasCommentsCheck from "./conversation-has-comments-check";
+import Highlight from "react-highlight";
+import Radium from "radium";
 import React from "react";
 import { connect } from "react-redux";
-import Radium from "radium";
-import _ from "lodash";
-import Highlight from "react-highlight";
 import { Link } from "react-router";
+
 
 const styles = {
   card: {
@@ -41,6 +43,9 @@ class ShareAndEmbed extends React.Component {
   render() {
     return (
       <div>
+        <ConversationHasCommentsCheck
+          conversation_id={this.props.params.conversation_id}
+          strict_moderation={this.props.zid_metadata.strict_moderation}/>
         <div style={styles.card}>
           <p style={{
             fontSize: 24,
