@@ -1,0 +1,140 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:minimatch:20160620':
+    - victory-bar > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-animation > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-animation > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > victory-animation > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-util > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-util > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > victory-util > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > victory-util > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > builder-react-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > builder-react-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > victory-animation > builder-react-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > victory-animation > builder-react-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-animation > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-animation > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-animation > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > victory-animation > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > victory-label > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-label > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > victory-label > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-animation > builder-victory-component > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > victory-label > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-label > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > victory-label > victory-util > builder-victory-component > radium > babel > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-animation > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-animation > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-animation > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > victory-animation > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-util > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-util > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > victory-util > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > victory-util > builder-victory-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-animation > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-animation > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-line > victory-animation > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-bar > victory-animation > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-util > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-util > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-axis > victory-label > victory-util > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-chart > victory-axis > victory-label > victory-util > builder-victory-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > builder-react-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > builder-react-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > victory-animation > builder-react-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > victory-animation > builder-react-component > babel-loader > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > builder-react-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > builder-react-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-line > victory-animation > builder-react-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'
+    - victory-pie > victory-animation > builder-react-component > babel-core > minimatch:
+        patched: '2016-08-02T11:02:18.245Z'

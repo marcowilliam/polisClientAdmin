@@ -12,7 +12,9 @@
     "deploy_TO_PRODUCTION": "deploy_TO_PRODUCTION",
     "deployPreprod": "deployPreprod",
     "start": "./x",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Colin Megill",
   "license": "MIT",
@@ -67,11 +69,13 @@
     "redux-router": "^1.0.0-beta3",
     "redux-thunk": "^1.0.0",
     "request": "^2.65.0",
-    "victory-axis": "1.5.7",
-    "victory-bar": "2.5.0",
-    "victory-chart": "2.1.1",
-    "victory-line": "0.5.6",
-    "victory-pie": "0.1.4",
-    "whatwg-fetch": "^0.10.1"
-  }
+    "victory-axis": "2.0.0",
+    "victory-bar": "4.0.0",
+    "victory-chart": "4.0.0",
+    "victory-line": "1.0.0",
+    "victory-pie": "1.0.0",
+    "whatwg-fetch": "^0.10.1",
+    "snyk": "^1.17.5"
+  },
+  "snyk": true
 }
