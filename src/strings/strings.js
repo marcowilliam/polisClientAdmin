@@ -10,6 +10,7 @@
 
 
 import en_us from "./en_us";
+import pt_br from "./pt_br"; // Temporarily until language choosing code is ported
 
 var s = {};
 
