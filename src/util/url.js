@@ -13,7 +13,7 @@ var preprod = "https://preprod.pol.is/";
 var embed = "https://embed.pol.is/";
 var survey = "https://survey.pol.is/";
 var polisio = "https://www.polis.io/";
-var localhost = "http://localhost:5000/";
+var localhost = "http://localhost:5002/";
 var localhost5002 = "http://localhost:5002/";
 
 var urlPrefix = prod;
