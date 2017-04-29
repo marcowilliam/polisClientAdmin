@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  polis-admin:
+    container_name: polis-admin
+    build: .
+    volumes:
+      - .:/code
+    ports:
+      - 5002:5002
+    external_links:
+      - polisserver_default
+    networks:
+      - default
+      - polisserver_default
+
+networks:
+  polisserver_default:
+    external: true
+  
+
+
+
